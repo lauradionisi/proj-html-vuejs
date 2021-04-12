@@ -9,6 +9,7 @@
 
 .container {
     border: 1px solid blue;
+    overflow-y: auto;
 }
 
 .wrapper {
@@ -42,14 +43,28 @@
     margin: 0 auto;
 }
 
-.green-button {
-    padding: 5px 15px;
-    color: white;
+.green-button {  
     background-color: #097a7c;
     border-color: transparent;
+}
+.green-button,
+.transparent-button {
+    padding: 5px 15px;
+    color: white;
     border-radius: 5px;
+    text-transform: uppercase;
+}
+.transparent-button {
+    background-color: transparent;
+    border: 1px solid #097a7c;
 }
 
+.green-underline {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #097a7c;
+}
 /* JUMBOTRON E NAV */
 
 .nav-info {
@@ -114,15 +129,31 @@
 }
 
 .jumbo-info {
-    width: 500px;
+    width: 400px;
     height: 300px;
     margin-top: 100px;
+    color: white;
     border: 1px solid white;
+}
+.jumbo-info h4,
+.company-left h4 {
+    color: #097a7c;
+    text-transform: uppercase;
+}
+.jumbo-info h1,
+.company-left h1 {
+    padding: 15px 0;
+    font-weight: 800;
+}
+.jumbo-info button,
+.company-left button {
+    margin-top: 30px;
 }
 /* MAIN CONTENT */
 
+/* BUSINESS VALUE SECTION */
+
 .business-value {
-    display: flex;
     justify-content: center;
     align-items: center;   
     height: 400px;
@@ -130,8 +161,58 @@
 }
 
 .b-v-section {
+    flex-direction: column;
     width: 350px;
     height: 250px;
     background-color: white;
     border-radius: 5px;
+    padding: 20px 30px;
+}
+.b-v-section h1 {
+    margin: 10px 0;
+}
+.rounded-icons {
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #daeced;
+    color: #1a948f;
+    font-size: 25px;
+}
+
+/* COMPANY SECTION */
+
+.company {
+    height: 600px;
+    
+}
+.company-left,
+.company-right {
+    width: 50%;
+    height: 100%;
+}
+.company-left {
+    height: 600px;
+    margin-top: 100px;  
+    padding: 20px 150px;
+}
+.company-left .transparent-button {
+    color: #097a7c;
+}
+.company-right {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/img/about-5.jpg);
+}
+
+
+
+/* ACTIONS E PROJECTS SECTION */
+
+.actions-projects {
+    width: 100%;
+    height: 800px;
+    background-color: #121117;
 }
