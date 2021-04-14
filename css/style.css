@@ -7,7 +7,7 @@
 
     /* DEBUG */
 
-.container {
+/* .container {
     border: 1px solid blue;
     overflow-y: auto;
 }
@@ -19,6 +19,9 @@
 .b-v-section {
     border: 1px solid green;
 }
+.jumbotron {
+     border: 1px solid blueviolet;
+ } */
 
     /* UTILITY */
 
@@ -68,6 +71,10 @@
 
 .green-text {
     color: #097a7c;
+}
+
+.blue-text {
+    color: #24343c;
 }
 /* JUMBOTRON E NAV */
 
@@ -127,7 +134,6 @@
 .jumbotron {
     width: 100%;
     height: 650px;
-    border: 1px solid blueviolet;
     background-image: url(../img/img/bg-4.jpg);
     background-size: cover;  
 }
@@ -137,18 +143,23 @@
     height: 300px;
     margin-top: 100px;
     color: white;
-    border: 1px solid white;
+    font-size: x-large;
 }
+
 .jumbo-info h4,
 .company-left h4,
-.actions-projects h4 {
+.actions-projects h4,
+.process-management h4,
+.feedback-text h4 {
     color: #097a7c;
     text-transform: uppercase;
 }
 .jumbo-info h1,
-.company-left h1 {
+.company-left h1,
+.feedback-text h1 {
     padding: 15px 0;
     font-weight: 900;
+    font-size: 40px;
 }
 .jumbo-info button,
 .company-left button {
@@ -156,21 +167,24 @@
 }
 /* MAIN CONTENT */
 
-/* BUSINESS VALUE SECTION */
+/* BUSINESS VALUE SECTION  e TRUSTED FEEDBACK*/ 
 
-.business-value {
+.business-value,
+.feedback-agency,
+.feedback-text {
     justify-content: center;
     align-items: center;   
     height: 400px;
     background-color: #eef4ed ;
 }
 
-.b-v-section {
+.b-v-section,
+.feed-section {
     flex-direction: column;
     width: 350px;
     height: 250px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px 30px;
 }
 .b-v-section h1 {
@@ -191,7 +205,7 @@
 
 .company {
     height: 600px;
-    
+    overflow: hidden;
 }
 .company-left,
 .company-right {
@@ -222,6 +236,7 @@
     background-color: #121117;
     justify-content: center;
     text-align: center;
+    overflow-y: hidden;
 }
 .actions-projects .text {
     margin-top: 100px;
@@ -267,6 +282,99 @@
     width: 100%;
     border-radius: 5px;
     filter: brightness(0.6);
+}
+
+/* PROCESS MANAGEMENT SECTION */
+
+.process-management {
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    margin-top: 50px ;
+}
+.process-management .text {
+    width: 100%;
+}
+
+.process-management h1 {
+    font-weight: 900;
+    font-size: 40px;
+    margin: 30px 0;
+}
+.process-management .subtitle {
+    color: rgb(68, 68, 68);
+    width: 50%;
+    margin: auto;
+}
+
+.plan-timeline {
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.line {
+    width: 215px;
+    height: 5px;
+    background-color: #097a7c41;
+}
+.circle {
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #097a7c41;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.plan-text {
+    padding: 0 100px 0 100px;
+    justify-content: space-between;
+}
+.plan-text h2 {
+    margin-bottom: 15px;
+}
+
+.plan-points {
+    width: 215px;
+}
+
+/* TRUSTED FEEDBACK SECTION */
+.feedback {
+    flex-direction: column;
+    height: 100px;
+ 
+}
+.feedback-text {
+    flex-direction: column;
+    align-content: center;
+    padding: 55px;
 
 }
 
+.feedback-text .subtitle {
+    color: rgb(92, 92, 92);
+    width: 50%;
+    text-align: center;
+}
+
+.feedback-agency {
+    padding: 40px 0;
+}
+
+.feed-section img {
+    width: 130px;
+    margin-bottom: 25px;
+}
+
+.feed-section p {
+    color: rgb(92, 92, 92);
+    line-height: 25px;
+}
+
+.feed-section .fas {
+    color: rgb(181, 181, 181);
+    align-self: flex-end;
+}
