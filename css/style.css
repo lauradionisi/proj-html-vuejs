@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Lato', sans-serif;
 }
 
     /* DEBUG */
@@ -60,10 +60,14 @@
 }
 
 .green-underline {
-    width: 100%;
     height: 20px;
     border-radius: 5px;
-    background-color: #097a7c;
+    background-color: #097a7c41;
+    padding: 0 5px;
+}
+
+.green-text {
+    color: #097a7c;
 }
 /* JUMBOTRON E NAV */
 
@@ -136,14 +140,15 @@
     border: 1px solid white;
 }
 .jumbo-info h4,
-.company-left h4 {
+.company-left h4,
+.actions-projects h4 {
     color: #097a7c;
     text-transform: uppercase;
 }
 .jumbo-info h1,
 .company-left h1 {
     padding: 15px 0;
-    font-weight: 800;
+    font-weight: 900;
 }
 .jumbo-info button,
 .company-left button {
@@ -213,6 +218,55 @@
 
 .actions-projects {
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background-color: #121117;
+    justify-content: center;
+    text-align: center;
 }
+.actions-projects .text {
+    margin-top: 100px;
+}
+.actions-projects h1 {
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    margin: 30px 0;
+}
+
+.actions-projects ul {
+    justify-content: center;
+}
+.actions-projects ul li {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.72);
+    text-transform: uppercase;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 5px;
+    margin: 15px ;
+}
+.img-text {
+    position: absolute;
+    bottom: 40px;
+    color: white;
+    font-size: 25px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    filter: brightness(0.6);
+
+}
+
