@@ -121,6 +121,12 @@
     align-self: center;
     list-style: none;
     padding-left: 40px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #097a7c;
 }
 
 .logo {
@@ -428,7 +434,7 @@ footer {
 
 .footer-right h3,
 .footer-right p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .icon {
