@@ -25,10 +25,6 @@
 
     /* UTILITY */
 
-.container {
-    width: 100%;
-    height: 100vh;
-}
 
 .margin-left {
     margin-left: 30px;
@@ -150,13 +146,15 @@
 .company-left h4,
 .actions-projects h4,
 .process-management h4,
-.feedback-text h4 {
+.feedback-text h4,
+.footer-left h4 {
     color: #097a7c;
     text-transform: uppercase;
 }
 .jumbo-info h1,
 .company-left h1,
-.feedback-text h1 {
+.feedback-text h1,
+.footer-left h1 {
     padding: 15px 0;
     font-weight: 900;
     font-size: 40px;
@@ -231,12 +229,12 @@
 /* ACTIONS E PROJECTS SECTION */
 
 .actions-projects {
-    width: 100%;
-    height: 100vh;
+    width: 100%;   
     background-color: #121117;
     justify-content: center;
     text-align: center;
-    overflow-y: hidden;
+    overflow-y: auto;
+    padding-bottom: 40px;
 }
 .actions-projects .text {
     margin-top: 100px;
@@ -289,8 +287,7 @@
 .process-management {
     justify-content: center;
     text-align: center;
-    height: 500px;
-    margin-top: 50px ;
+    margin: 60px 0 ;
 }
 .process-management .text {
     width: 100%;
@@ -344,14 +341,13 @@
 /* TRUSTED FEEDBACK SECTION */
 .feedback {
     flex-direction: column;
-    height: 100px;
+    
  
 }
 .feedback-text {
     flex-direction: column;
-    align-content: center;
     padding: 55px;
-
+    height: 200px;
 }
 
 .feedback-text .subtitle {
@@ -377,4 +373,83 @@
 .feed-section .fas {
     color: rgb(181, 181, 181);
     align-self: flex-end;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 70px;
+    background-color: #121117;
+}
+
+.footer-left {
+    width: 60%;
+    height: 400px;
+}
+.footer-left h1,
+.footer-right h3 {
+    color: white;
+}
+.footer-left p,
+.footer-right p {
+    color: #e4eae6b8;
+}
+
+.form {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form input {
+    width: 49%;
+    padding: 8px;
+    margin-top: 8px;
+    background-color: #202427;
+    color: #e4eae6;
+    border: 1px solid #202427;
+    border-radius: 5px;
+}
+
+#text-message {
+    display: flex;
+    width: 100%;
+    padding-bottom: 90px;
+    text-align: start;
+    overflow-wrap: break-word; 
+    margin-bottom: 15px;
+
+}
+
+.footer-right {
+    width: 40%;
+    height: 400px;
+    margin-left: 30px;
+}
+
+.footer-right h3,
+.footer-right p {
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #097a7c41;
+    color: #097a7c;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons {
+    margin-top: 15px;
+}
+
+.footer-icons span {
+    align-self: center;
+    margin-left: 8px;
+}
+
+.footer-right button {
+    margin-top: 15px;
 }
